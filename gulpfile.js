@@ -38,5 +38,17 @@ const styles = () => {
     .pipe(gulp.dest(paths.styles.dest))
 }
 
+// Отслеживание изменений стилей
+
+const watchCss = () => {
+  gulp.watch(['source/sass/*.scss'], stylesRun)
+}
+
+// Сборка файла стилей
+
+const build = gulp.series(deletedFileCss, styles, watchCss)
+
 export const stylesRun = styles;
 export const delCss = deletedFileCss;
+export const watch = watchCss;
+export const b = build;
