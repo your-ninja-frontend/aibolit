@@ -23,7 +23,7 @@ const paths = {
 
 // Отчистка кталога стилей
 
-const deletedFileCss = () => deleteAsync(['build/css/*.css']);
+const clean = () => deleteAsync(['build/css/*.css', 'build/js/*.js']);
 
 // Генерация файла стилей
 
@@ -46,9 +46,9 @@ const watchCss = () => {
 
 // Сборка файла стилей
 
-const build = gulp.series(deletedFileCss, styles, watchCss)
+const build = gulp.series(clean, styles, watchCss)
 
 export const stylesRun = styles;
-export const delCss = deletedFileCss;
+export const delAll = clean;
 export const watch = watchCss;
 export const b = build;
