@@ -2,8 +2,7 @@
 
 @font-face {
   font-family: "SchoolBook";
-  src:
-    url(../fonts/SchoolBook/schoolbook.woff2) format("woff2"),
+  src: url(../fonts/SchoolBook/schoolbook.woff2) format("woff2"),
     url(../fonts/SchoolBook/schoolbook.woff) format("woff");
   font-weight: 400;
   font-style: normal;
@@ -11,8 +10,7 @@
 
 @font-face {
   font-family: "SchoolBook";
-  src:
-    url(../fonts/SchoolBook/schoolbook-bold.woff2) format("woff2"),
+  src: url(../fonts/SchoolBook/schoolbook-bold.woff2) format("woff2"),
     url(../fonts/SchoolBook/schoolbook-bold.woff) format("woff");
   font-weight: 700;
   font-style: normal;
@@ -20,8 +18,7 @@
 
 @font-face {
   font-family: "SchoolBook";
-  src:
-    url(../fonts/SchoolBook/schoolbook-bold-italic.woff2) format("woff2"),
+  src: url(../fonts/SchoolBook/schoolbook-bold-italic.woff2) format("woff2"),
     url(../fonts/SchoolBook/schoolbook-bold-italic.woff) format("woff");
   font-weight: 400;
   font-style: italic;
@@ -29,8 +26,7 @@
 
 @font-face {
   font-family: "SchoolBook";
-  src:
-    url(../fonts/SchoolBook/schoolbook-italic.woff2) format("woff2"),
+  src: url(../fonts/SchoolBook/schoolbook-italic.woff2) format("woff2"),
     url(../fonts/SchoolBook/schoolbook-italic.woff) format("woff");
   font-weight: 700;
   font-style: italic;
@@ -38,18 +34,28 @@
 
 @font-face {
   font-family: "Futura New";
-  src:
-    url(../fonts/FuturaNew/FuturaNew.woff2) format("woff2"),
+  src: url(../fonts/FuturaNew/FuturaNew.woff2) format("woff2"),
     url(../fonts/FuturaNew/FuturaNew.woff) format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Futura New";
+  src: url(../fonts/FuturaNew/FuturaNewBold.woff2) format("woff2"),
+    url(../fonts/FuturaNew/FuturaNewBold.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* Global */
+
+* {
+  box-sizing: border-box;
+}
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 a {
@@ -75,12 +81,25 @@ a {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+
+  @media (max-width: $mobail-only) {
+    padding-top: 80px;
+  }
 }
 
 .container {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 140px;
+  margin: 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    min-width: $tablet;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: $desktop;
+    padding: 0 80px;
+  }
 }
 
 .visually-hidden {
