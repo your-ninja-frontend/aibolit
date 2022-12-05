@@ -1,0 +1,92 @@
+.slider {
+  display: flex;
+  position: relative;
+}
+
+.slider__button-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 20px;
+
+  @media (max-width: $mobail-only) {
+    height: 280px;
+  }
+}
+
+.slider__button {
+  font-family: $font-futura;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: $brown-light;
+  width: 40px;
+  height: 40px;
+
+  &--active {
+    color: $black;
+    background-image: url("../img/slider-button.svg");
+  }
+}
+
+.slider__title {
+  font-family: $font-school;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $black;
+  margin: 20px;
+  padding: 0;
+}
+
+.slider__first-slide-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  @media (max-width: $mobail-only) {
+    max-width: 300px;
+    height: auto;
+  }
+
+  @media (min-width: $tablet) {
+    max-width: 600px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 833px;
+    height: auto;
+  }
+}
+
+.slider__entry {
+  font-family: $font-futura;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+
+  margin: 20px;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 33.5px;
+  background: transparent;
+  background-color: $orange;
+  box-shadow: 0px 4px 20px $orange;
+}
+
+.slider__tel {
+  font-size: 24px;
+  font-weight: 700;
+  color: $brown;
+  display: block;
+  margin: 20px;
+}
