@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+
+  @media (max-width: $mobail-only) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: $bg-white;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 130px;
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 65px;
+  }
+}
+
+.header__logo {
+  @media (min-width: $tablet) {
+    width: 100px;
+    height: 100px;
+  }
+}

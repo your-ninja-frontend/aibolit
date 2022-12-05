@@ -1,0 +1,31 @@
+.change-city {
+  font-family: $font-futura;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $orange;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 29px;
+    margin-right: 10px;
+    background-image: url("../img/change-city-icon.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      margin-right: 19px;
+    }
+  }
+}

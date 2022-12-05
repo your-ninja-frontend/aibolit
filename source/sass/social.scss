@@ -1,0 +1,24 @@
+.social__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.social--slider .social__list {
+  margin: 20px;
+}
+
+.social__link {
+  display: block;
+}
+
+.social__icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social--slider .social__icon {
+  fill: $brown;
+}
