@@ -1,0 +1,13 @@
+.button {
+  text-transform: uppercase;
+  color: $white;
+  padding: 24px 77px;
+  border-radius: 33.5px;
+  background-color: $orange;
+  box-shadow: 0px 4px 20px $orange;
+
+  @media (max-width: $mobail-only) {
+    font-size: 15px;
+    padding: 15px 50px;
+  }
+}
