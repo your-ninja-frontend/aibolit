@@ -1,13 +1,24 @@
 .social__list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  margin: 0;
   padding: 0;
 }
 
-.social--slider .social__list {
-  margin: 20px;
+.social__item {
+  margin-right: 15px;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (min-width: $tablet) {
+    margin-right: 50px;
+    margin-bottom: 10px;
+  }
 }
 
 .social__link {
@@ -21,4 +32,11 @@
 
 .social--slider .social__icon {
   fill: $brown;
+
+}
+
+.social__list--slider {
+  @media (max-width: $mobail-only) {
+    margin-bottom: 15px;
+  }
 }

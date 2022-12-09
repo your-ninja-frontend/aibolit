@@ -7,23 +7,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 20px;
-  margin-right: 20px;
+  padding: 20px 10px 20px 0;
 
-  @media (max-width: $mobail-only) {
-    height: 280px;
+  @media (min-width: $tablet) {
+    padding-right: 20px;
   }
 }
 
 .slider__button {
-  font-family: $font-futura;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: transparent;
   color: $brown-light;
   width: 40px;
   height: 40px;
@@ -34,59 +25,82 @@
   }
 }
 
-.slider__title {
-  font-family: $font-school;
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 400;
-  color: $black;
-  margin: 20px;
-  padding: 0;
+.slider__main-content {
+  flex-grow: 1;
+  padding: 20px 10px;
+
+  & > * {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding: 20px 20px 10px;
+
+    & > * {
+      margin-bottom: 60px;
+    }
+  }
 }
 
-.slider__first-slide-img {
+.slider__slide {
+  display: none;
+}
+
+.slider__slide--active {
+  display: block;
+}
+
+.slider__title {
+  font-weight: 400;
+  color: $black;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 50px;
+    line-height: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 80px;
+    line-height: 110px;
+  }
+}
+
+.slider__img {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: -1;
 
-  @media (max-width: $mobail-only) {
-    max-width: 300px;
-    height: auto;
-  }
-
-  @media (min-width: $tablet) {
-    max-width: 600px;
-    height: auto;
-  }
+  max-width: 50%;
+  height: auto;
 
   @media (min-width: $desktop) {
-    max-width: 833px;
+    max-width: 100%;
     height: auto;
   }
 }
 
-.slider__entry {
-  font-family: $font-futura;
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $white;
-
-  margin: 20px;
-  padding: 15px 50px;
-  border: none;
-  border-radius: 33.5px;
-  background: transparent;
-  background-color: $orange;
-  box-shadow: 0px 4px 20px $orange;
+.slider__contacts {
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .slider__tel {
-  font-size: 24px;
   font-weight: 700;
   color: $brown;
   display: block;
-  margin: 20px;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+  }
 }

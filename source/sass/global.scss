@@ -50,8 +50,30 @@
 
 /* Global */
 
-* {
+*,
+::after,
+::before {
   box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: $font-school;
+}
+
+h2, h3 {
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 40px;
+  @media (max-width: $mobail-only) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+h3 {
+  font-size: 30px;
 }
 
 img {
@@ -61,6 +83,18 @@ img {
 a {
   text-decoration: none;
   font-style: normal;
+}
+
+button {
+  cursor: pointer;
+  font-family: $font-futura;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
 }
 
 .page {
@@ -76,7 +110,6 @@ a {
   line-height: 30px;
   background-color: $bg-white;
   color: $brown;
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
