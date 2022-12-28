@@ -74,6 +74,10 @@ h2 {
 
 h3 {
   font-size: 30px;
+  @media (max-width: $mobail-only) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 img {
@@ -121,16 +125,15 @@ button {
 }
 
 .container {
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
   padding: 0 20px;
 
   @media (min-width: $tablet) {
-    min-width: $tablet;
     padding: 0 40px;
   }
 
   @media (min-width: $desktop) {
-    min-width: $desktop;
     padding: 0 80px;
   }
 }

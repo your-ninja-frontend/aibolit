@@ -8,7 +8,7 @@
 }
 
 .social__item {
-  margin-right: 15px;
+  margin-right: 10px;
   margin-bottom: 5px;
 
   &:last-child {
@@ -31,12 +31,15 @@
 }
 
 .social--slider .social__icon {
-  fill: $brown;
+  fill: $brown-light;
+}
 
+.social--slider .social__icon:hover {
+  fill: $brown;
 }
 
 .social__list--slider {
   @media (max-width: $mobail-only) {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
   }
 }

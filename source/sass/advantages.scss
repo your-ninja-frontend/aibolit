@@ -1,0 +1,135 @@
+.advantages__wrapper {
+  margin-bottom: 100px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 200px;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 309px;
+  }
+}
+
+.advantages__title,
+.advantages__subtitle {
+  color: $black;
+  margin: 0;
+}
+
+.advantages__title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 104px;
+  }
+}
+
+.advantages__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 50px 0;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 94px;
+    max-width: 1640px;
+    justify-items: start;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+
+  @media (min-width: $full) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: min-content 1fr;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+
+.advantages__subtitle {
+  text-align: center;
+
+  @media (min-width: $tablet) and (max-width: 1599px) {
+    min-height: 80px;
+  }
+  @media (min-width: $full) {
+    grid-column: 1/-1;
+    text-align: left;
+    margin-bottom: 36px;
+  }
+}
+
+.advantages__description {
+  text-align: center;
+  margin: 0;
+  max-width: 318px;
+  order: 1;
+
+  @media (min-width: $full) {
+    text-align: left;
+  }
+}
+
+.advantages__item--icon::after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  display: block;
+  top: 40px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  order: 0;
+
+  @media (min-width: $full) {
+    align-self: center;
+  }
+}
+
+.advantages__item--icon-24-hours::after {
+  background-image: url('../img/advantages__item--icon-24-hours.svg');
+}
+
+.advantages__item--icon-facilities::after {
+  background-image: url('../img/advantages__item--icon-facilities.svg');
+}
+
+.advantages__item--icon-experience::after {
+  background-image: url('../img/advantages__item--icon-experience.svg');
+}
+
+.advantages__item--icon-lab::after {
+  background-image: url('../img/advantages__item--icon-lab.svg');
+}
+
+.advantages__item--icon-hospitals::after {
+  background-image: url('../img/advantages__item--icon-hospitals.svg');
+}
+
+.advantages__item--icon-equipment::after {
+  background-image: url('../img/advantages__item--icon-equipment.svg');
+}
+
+.advantages__item--icon-drugs::after {
+  background-image: url('../img/advantages__item--icon-drugs.svg');
+}
+
+.advantages__item--icon-grooming::after {
+  background-image: url('../img/advantages__item--icon-grooming.svg');
+}

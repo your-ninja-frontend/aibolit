@@ -1,0 +1,75 @@
+.about-company {
+  background-color: $bg-history;
+  padding: 180px 0 206px;
+  min-width: 0;
+}
+
+.about-company__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.about-company__title {
+  color: $black;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.about-company__history {
+  max-width: 479px;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.about-company__link {
+  line-height: 20px;
+  font-weight: 700;
+  color: $orange;
+  text-transform: uppercase;
+}
+
+.about-company__history-link {
+  margin-bottom: 100px;
+}
+
+.about-company-slider {
+  width: 178px;
+  max-width: 1155px;
+  margin-bottom: 60px;
+  @media (min-width: $tablet) {
+    width: 570px;
+  }
+  @media (min-width: $desktop) {
+    width: 760px;
+    margin-bottom: 36px;
+  }
+  @media (min-width: 1400px) {
+    width: 1155px;
+  }
+}
+
+.about-company-slider-img {
+  width: 178px;
+  height: 178px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 5px;
+
+  @media (min-width: $tablet) {
+    margin-right: 15px;
+  }
+}
+
+.about-company-slider-img1 {
+  background-image: url('../img/about-company-slider-img1.png');
+}
+
+.about-company-slider-img2 {
+  background-image: url('../img/about-company-slider-img2.png');
+}
+
+.about-company-slider-img3 {
+  background-image: url('../img/about-company-slider-img3.png');
+}

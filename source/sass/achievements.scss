@@ -1,0 +1,67 @@
+.achievements {
+  padding: 60px 0 250px;
+
+  @media (min-width: $tablet) {
+    padding: 316px 0;
+  }
+}
+
+.achievements__wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 716px;
+  margin: 0 auto;
+
+  &--bg-bird::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 80px;
+    right: 0;
+    width: 288px;
+    height: 223px;
+    background-image: url('../img/achievements__bird-bg.png');
+
+    @media (min-width: $tablet) {
+      top: 150px;
+      right: 120px;
+    }
+    @media (min-width: $desktop) {
+      z-index: 0;
+      top: 270px;
+      right: 50px;
+    }
+  }
+}
+.achievements__title {
+  font-size: 50px;
+  line-height: 40px;
+  margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 80px;
+    line-height: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 144px;
+    line-height: 110px;
+  }
+}
+
+.achievements__title-small-words {
+  font-family: $font-futura;
+  font-size: 30px;
+  color: $black;
+  display: block;
+  font-weight: 400;
+
+  @media (min-width: $tablet) {
+    font-size: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 80px;
+  }
+}
