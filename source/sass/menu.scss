@@ -66,6 +66,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 20px 10px;
   }
 }
 
@@ -76,9 +77,16 @@
 }
 
 .menu__item {
-  display: flex;
   @media (max-width: $mobail-only) {
     text-align: center;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 10px 30px 10px 0;
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 }
 
@@ -87,14 +95,15 @@
   font-weight: 700;
   color: $brown;
   text-transform: uppercase;
-  width: 100%;
+  display: block;
   padding: 15px 25px;
 
   @media (min-width: $tablet) {
-    padding: 20px;
-  }
+    color: $brown-light;
+    padding: 10px;
 
-  @media (min-width: $desktop) {
-    padding: 40px;
+    &:hover {
+      color: $brown;
+    }
   }
 }

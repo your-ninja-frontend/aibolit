@@ -60,7 +60,7 @@ const scripts = () => {
 
 const watchAll = () => {
   gulp.watch(['source/sass/*.scss'], stylesRun)
-  gulp.watch(paths.scripts.dest, scriptsRun)
+  gulp.watch(paths.scripts.src, scriptsRun)
 }
 
 // Сборка файла стилей
