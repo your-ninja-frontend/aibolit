@@ -32,14 +32,22 @@
 
 .social--slider .social__icon {
   fill: $brown-light;
-}
 
-.social--slider .social__icon:hover {
-  fill: $brown;
+  &:hover {
+    fill: $brown;
+  }
 }
 
 .social__list--slider {
   @media (max-width: $mobail-only) {
     margin-bottom: 50px;
+  }
+}
+
+.social__icon--footer {
+  fill: $white;
+
+  &:hover {
+    fill: $brown-light;
   }
 }
