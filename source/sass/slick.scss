@@ -14,3 +14,62 @@
 .slick-dots {
   bottom: -70px;
 }
+
+.slick__appointments .slick-dots {
+  top: 175px;
+}
+
+.slick__appointments .slick-next {
+  @media (min-width: $tablet) {
+    right: 0;
+  }
+  @media (min-width: $desktop) {
+    right: 17%;
+  }
+}
+
+.slick__appointments .slick-prev {
+  @media (min-width: $tablet) {
+    left: -25px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop) {
+    display: none !important;
+  }
+}
+
+.slick__appointments .slick-list {
+  padding: 20px;
+}
+
+.slick__all-services .slick-list {
+  padding: 10px;
+}
+
+.slick__all-services .slick-dots {
+  left: -12px;
+}
+
+.slick__all-services .slick-next {
+  @media (min-width: $tablet) {
+    right: 8%;
+  }
+  @media (min-width: $desktop) {
+    right: 6%;
+  }
+  @media (min-width: $full-hd) {
+    right: 15%;
+  }
+}
+
+.slick__all-services .slick-prev {
+  @media (min-width: $tablet) {
+    left: -35px;
+    z-index: 1;
+  }
+
+  @media (min-width: $desktop) {
+    display: none !important;
+  }
+}

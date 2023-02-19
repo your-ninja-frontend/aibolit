@@ -1,0 +1,30 @@
+.link-back {
+  grid-column: 2/-1;
+  display: inline-flex;
+  align-items: center;
+  width: min-content;
+  color: $orange;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $brown;
+
+    & .link-back__arrow {
+      fill: $brown;
+      stroke: $brown;
+    }
+  }
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 30px;
+  }
+}
+
+.link-back__arrow {
+  margin-right: 12px;
+  fill: $orange;
+  stroke: $orange;
+}
+
