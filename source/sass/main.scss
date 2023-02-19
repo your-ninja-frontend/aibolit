@@ -1,20 +1,42 @@
+// GLOBAL
+
 @import "variables";
 @import "colors";
 @import "global";
 @import "button";
 @import "slick";
-@import "header";
-@import "menu";
-@import "change-city";
+
+// Components
+
 @import "slider";
 @import "social";
+@import "app-links";
+@import "change-city";
+@import "link-back";
+
+// Main Blocks on Page
+
+@import "header";
+@import "menu";
+@import "footer";
+
+// Main page
+
 @import "services";
 @import "about-company";
 @import "achievements";
 @import "advantages";
 @import "app";
-@import "app-links";
 @import "contacts";
 @import "map";
-@import "footer";
+
+
+// Services page
+
+@import "therapy";
+@import "appointments";
+@import "therapy-main-content";
+@import "therapy-price";
+@import "all-services";
+
 

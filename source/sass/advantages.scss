@@ -4,14 +4,19 @@
   @media (min-width: $tablet) {
     margin-bottom: 200px;
   }
+
   @media (min-width: $desktop) {
     margin-bottom: 309px;
+  }
+
+  @media (min-width: $full-hd) {
+    padding-left: 140px;
+    padding-right: 140px;
   }
 }
 
 .advantages__title,
 .advantages__subtitle {
-  color: $black;
   margin: 0;
 }
 

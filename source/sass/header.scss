@@ -4,7 +4,7 @@
   align-items: center;
   padding-top: 10px;
 
-  @media (max-width: $mobail-only) {
+  @media (max-width: $tablet-max) {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,19 +13,26 @@
     background-color: $bg-white;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     margin-bottom: 130px;
-    padding-top: 30px;
+    padding-top: 65px;
   }
 
-  @media (min-width: $desktop) {
-    padding-top: 65px;
+  @media (min-width: $full-hd) {
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
 .header__logo {
-  @media (min-width: $tablet) {
-    width: 100px;
-    height: 100px;
+  @media (min-width: $desktop) {
+    width: 79px;
+    height: 63px;
+  }
+}
+
+.header__therapy {
+  @media (min-width: $desktop) {
+    margin-bottom: 76px;
   }
 }

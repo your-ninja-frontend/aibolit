@@ -1,0 +1,90 @@
+.appointments__therapy {
+  margin-bottom: 250px;
+  position: relative;
+}
+
+.appointments__therapy-title {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.appointments__therapy-card {
+  display: block;
+  width: 260px;
+  margin-right: 20px;
+  padding: 10px;
+  color: inherit;
+  background-color: $white;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    color: $white;
+    background-color: $orange;
+
+    & .appointments__therapy-card-title {
+      color: $white;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 344px;
+    padding: 20px;
+  }
+}
+
+.appointments__therapy-specialist-wrapper {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  column-gap: 16px;
+}
+
+.appointments__therapy-image {
+  flex-shrink: 0;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-indent: -100vw;
+  background-color: $brown-light;
+  object-fit: cover;
+}
+
+.appointments__therapy-card-title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: $font-futura;
+}
+
+.appointments__therapy-date {
+  grid-column: 2/-1;
+}
+
+.appointments__therapy-date--br {
+  @media (max-width: $mobail-only) {
+    display: none;
+  }
+}
+
+.appointments__therapy-slider {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110%;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    left: 0;
+    transform: none;
+    width: 125%;
+  }
+  @media (min-width: $full-hd) {
+    width: 140%;
+  }
+}

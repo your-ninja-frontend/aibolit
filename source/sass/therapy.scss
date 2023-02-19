@@ -1,0 +1,77 @@
+.therapy {
+  @media (min-width: $desktop) {
+    grid-column: 1/-1;
+    display: flex;
+    gap: 50px;
+  }
+  @media (min-width: $full-hd) {
+    gap: 150px;
+  }
+}
+
+.therapy__wrapper {
+  margin-bottom: 50px;
+  overflow: hidden;
+
+  @media (max-width: $tablet-max) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: min-content 1fr;
+    gap: 50px 54px;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $full-hd) {
+    column-gap: 150px;
+  }
+}
+
+.therapy__column-left {
+  @media (min-width: $desktop) {
+    min-width: 400px;
+  }
+}
+
+.therapy__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: $black;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 100px;
+    text-align: left;
+  }
+}
+
+.therapy__menu-list {
+  margin: 0;
+  padding: 0;
+}
+
+.therapy__menu-item {
+  margin-bottom: 15px;
+  list-style: none;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+}
+
+.therapy__menu-link {
+  color: $brown-light;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $brown;
+    padding-left: 10px;
+    transition: padding 0.3s;
+  }
+}

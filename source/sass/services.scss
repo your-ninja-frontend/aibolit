@@ -6,7 +6,7 @@
 .services__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   gap: 24px;
   margin: 0;
   padding: 0;
@@ -52,6 +52,7 @@
 .services__title {
   margin: 0;
   margin-bottom: 15px;
+  color: $brown;
 
   @media (max-width: $mobail-only) {
     font-size: 20px;

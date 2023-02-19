@@ -3,14 +3,12 @@
   display: flex;
   align-items: center;
 
-  &::before {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 29px;
-    margin-right: 10px;
-    background-image: url("../img/change-city-icon.svg");
-    background-repeat: no-repeat;
+  &:hover {
+    color: $brown;
+
+    & .change-city__icon {
+      fill: $brown;
+    }
   }
 
   @media (min-width: $tablet) {
@@ -19,3 +17,9 @@
     }
   }
 }
+
+.change-city__icon {
+  fill: $orange;
+  margin-right: 19px;
+}
+
