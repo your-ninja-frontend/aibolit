@@ -137,6 +137,18 @@
   }
 }
 
+.menu__link--active {
+  color: $orange;
+
+  &:hover {
+    background-color: inherit;
+  }
+
+  @media (min-width: $desktop) {
+    color: $brown;
+  }
+}
+
 .menu__submenu-parent {
   position: relative;
 
