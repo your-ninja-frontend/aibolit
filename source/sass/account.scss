@@ -1,0 +1,26 @@
+.account {
+  @media (min-width: $desktop) {
+    display: flex;
+    gap: 51px;
+  }
+  @media (min-width: $full-hd) {
+    gap: 151px;
+  }
+}
+
+.account__button-change {
+  display: block;
+  line-height: 30px;
+  text-transform: lowercase;
+  color: $orange;
+
+  &:hover {
+    color: $brown;
+  }
+}
+
+.account__left-column {
+  @media (min-width: $desktop) {
+    padding-top: 95px;
+  }
+}

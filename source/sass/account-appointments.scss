@@ -1,0 +1,12 @@
+.account-appointments {
+  margin-bottom: 50px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 100px;
+  }
+}
+
+.account-appointments__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
