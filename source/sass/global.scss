@@ -56,10 +56,19 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
   font-family: $font-school;
   color: $black;
-  margin: 0;
 }
 
 h1 {
@@ -76,7 +85,8 @@ h1 {
   }
 }
 
-h2, h3 {
+h2,
+h3 {
   line-height: 40px;
 }
 

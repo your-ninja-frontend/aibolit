@@ -16,7 +16,7 @@
 </head>
 
 <body class="page-body">
-  <header class="header header__therapy container">
+  <header class="header header__account container">
     <a href="index.html">
       <img class="header__logo" src="img/logo.svg" alt="Логотип ветклиники Айболит" width="60" height="60">
     </a>
@@ -26,7 +26,7 @@
       </button>
       <ul class="menu__list menu__list--close">
         <li class="menu__item">
-          <a class="menu__link menu__link--active" href="account.html">Личный кабинет</a>
+          <a class="menu__link menu__link--active">Личный кабинет</a>
         </li>
         <li class="menu__item menu__submenu-parent">
           <a class="menu__link" href="#">О нас</a>
@@ -66,8 +66,242 @@
       Волгоград
     </button>
   </header>
-  <main class="">
-
+  <main class="account container">
+    <div class="account__left-column">
+      <section class="account-menu">
+        <h1 class="account-menu__title">Виктория</h1>
+        <ul class="account-menu__list">
+          <li class="account-menu__item">
+            <a class="account-menu__link" href="#">Личные данные</a>
+          </li>
+          <li class="account-menu__item">
+            <a class="account-menu__link" href="#">Мои питомцы</a>
+          </li>
+          <li class="account-menu__item">
+            <a class="account-menu__link" href="#">Запись на прием</a>
+          </li>
+          <li class="account-menu__item">
+            <a class="account-menu__link" href="#">Выйти</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="account__right-column">
+      <section class="account-personal-data">
+        <h2 class="account-personal-data__title">Личные данные</h2>
+        <div class="account-personal-data__wrapper">
+          <div class="account-personal-data__left-column">
+            <img class="account-personal-data__avatar" src="#" alt="" width="130" height="130">
+            <button class="account-personal-data__button-change account__button-change">Изменить</button>
+          </div>
+          <div class="account-personal-data__center-column">
+            <div class="account-personal-data__information-wrapper">
+              <h3 class="account-personal-data__inner-title">Имя</h3>
+              <p class="account-personal-data__info">Виктория</p>
+            </div>
+            <div class="account-personal-data__information-wrapper">
+              <h3 class="account-personal-data__inner-title">Фамилия</h3>
+              <p class="account-personal-data__info">Иванова</p>
+            </div>
+            <div class="account-personal-data__information-wrapper">
+              <h3 class="account-personal-data__inner-title">Отчетсво</h3>
+              <p class="account-personal-data__info">Александровна</p>
+            </div>
+            <div class="account-personal-data__information-wrapper">
+              <h3 class="account-personal-data__inner-title">Телефон</h3>
+              <p class="account-personal-data__info">+7 999 598-12-45</p>
+            </div>
+          </div>
+          <div class="account-personal-data__right-column">
+            <h3 class="account-personal-data__about-title">О себе</h3>
+            <p class="account-personal-data__about-info">Живу в Волгограде, очень люблю животных! Мечтаю завести много
+              зверей и построить приют. Пока что у меня
+              собака, кошка и рыбки :)</p>
+          </div>
+        </div>
+      </section>
+      <section class="account-pets">
+        <h2 class="account-pets__title">Мои питомцы</h2>
+        <button class="account-pets__add-pet">
+          <svg class="account-pets__add-pet--icon" width="130" height="130">
+            <use xlink:href="img/sprite/sprite.svg#icon-newpets"></use>
+          </svg>
+          Добавить нового питомца</button>
+        <div class="card-pet">
+          <div class="card-pet__left-column">
+            <img class="card-pet__avatar" src="img/pet-dog.jpg" alt="">
+            <button class="card-pet__button-change account__button-change">Изменить</button>
+          </div>
+          <div class="card-pet__center-column">
+            <h3 class="card-pet__name">Громопетр</h3>
+            <div class="card-pet__information-wrapper">
+              <h4 class="card-pet__title">Тип</h4>
+              <p class="card-pet__info">Собака</p>
+            </div>
+            <div class="card-pet__information-wrapper">
+              <h4 class="card-pet__title">Пол</h4>
+              <p class="card-pet__info">Мужской</p>
+            </div>
+            <div class="card-pet__information-wrapper">
+              <h4 class="card-pet__title">Порода</h4>
+              <p class="card-pet__info">Без породы</p>
+            </div>
+            <div class="card-pet__information-wrapper">
+              <h4 class="card-pet__title">Возраст</h4>
+              <p class="card-pet__info">1 год 2 месяца</p>
+            </div>
+          </div>
+          <div class="card-pet__right-column">
+            <div class="card-pet__medical-card-wrapper">
+              <h4 class="card-pet__title">Медицинская карта</h4>
+              <a class="card-pet__medical-card-file" href="#" download>
+                <span class="card-pet__medical-card-name">10255</span>
+                <span class="card-pet__medical-card-date">обновлена
+                  <time datetime="2019-06-19">25.06.19</time>
+                </span>
+              </a>
+            </div>
+            <div class="card-pet__medical-card-wrapper">
+              <h4 class="card-pet__title">Результаты анализов</h4>
+              <a class="card-pet__medical-card-file card-pet__medical-card-file--analize" href="#" download>
+                <span class="card-pet__medical-card-name">ОАК</span>
+                <span class="card-pet__medical-card-date">
+                  <time datetime="2019-06-19">25.06.19</time>
+                </span>
+              </a>
+              <a class="card-pet__medical-card-file card-pet__medical-card-file--analize" href="#" download>
+                <span class="card-pet__medical-card-name">Узи брюшной полости</span>
+                <span class="card-pet__medical-card-date">
+                  <time datetime="2019-06-19">25.06.19</time>
+                </span>
+              </a>
+              <a class="card-pet__medical-card-file card-pet__medical-card-file--analize" href="#" download>
+                <span class="card-pet__medical-card-name">
+                  Биохимия крови
+                </span>
+                <span class="card-pet__medical-card-date">
+                  <time datetime="2019-06-19">25.06.19</time>
+                </span>
+              </a>
+              <a class="card-pet__medical-card-file card-pet__medical-card-file--analize" href="#" download>
+                <span class="card-pet__medical-card-name">
+                  Анализ очень длинное...
+                </span>
+                <span class="card-pet__medical-card-date">
+                  <time datetime="2019-06-19">25.06.19</time>
+                </span>
+              </a>
+              <a class="card-pet__medical-card-file card-pet__medical-card-file--analize" href="#" download>
+                <span class="card-pet__medical-card-name">ОАК</span>
+                <span class="card-pet__medical-card-date">
+                  <time datetime="2019-06-19">25.06.19</time>
+                </span>
+              </a>
+              <a class="card-pet__medical-card-file card-pet__medical-card-file--analize" href="#" download>
+                <span class="card-pet__medical-card-name">Узи брюшной полости</span>
+                <span class="card-pet__medical-card-date">
+                  <time datetime="2019-06-19">25.06.19</time>
+                </span>
+              </a>
+              <a class="card-pet__medical-card-file card-pet__medical-card-file--analize" href="#" download>
+                <span class="card-pet__medical-card-name">
+                  Биохимия крови
+                </span>
+                <span class="card-pet__medical-card-date">
+                  <time datetime="2019-06-19">25.06.19</time>
+                </span>
+              </a>
+              <a class="card-pet__medical-card-file card-pet__medical-card-file--analize" href="#" download>
+                <span class="card-pet__medical-card-name">
+                  Анализ очень длинное...
+                </span>
+                <span class="card-pet__medical-card-date">
+                  <time datetime="2019-06-19">25.06.19</time>
+                </span>
+              </a>
+            </div>
+            <button class="card-pet__all-files">
+              <svg class="card-pet__icon-arrow" width="20" height="16">
+                <use xlink:href="img/sprite/sprite.svg#arrow-bottom"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="card-pet">
+          <div class="card-pet__left-column">
+            <img class="card-pet__avatar" src="img/pet-cat.jpg" alt="">
+            <button class="card-pet__button-change account__button-change">Изменить</button>
+          </div>
+          <div class="card-pet__center-column">
+            <h3 class="card-pet__name">Имя питомца</h3>
+            <div class="card-pet__information-wrapper">
+              <h4 class="card-pet__title">Тип</h4>
+              <p class="card-pet__info">Кошка</p>
+            </div>
+            <div class="card-pet__information-wrapper">
+              <h4 class="card-pet__title">Пол</h4>
+              <p class="card-pet__info">Женский</p>
+            </div>
+            <div class="card-pet__information-wrapper">
+              <h4 class="card-pet__title">Порода</h4>
+              <p class="card-pet__info">Русская голубая</p>
+            </div>
+            <div class="card-pet__information-wrapper">
+              <h4 class="card-pet__title">Возраст</h4>
+              <p class="card-pet__info">4 месяца</p>
+            </div>
+          </div>
+          <div class="card-pet__right-column
+          ">
+            <div class="card-pet__medical-card-wrapper">
+              <h4 class="card-pet__title">Медицинская карта</h4>
+              <p class="card-pet__info">Медицинскую карту заводят при первом посещении клиники и обновляют при каждом
+                обращении. Здесь вы
+                сможете посмотреть и скачать актуальную карту в формате pdf</p>
+            </div>
+            <div class="card-pet__medical-card-wrapper">
+              <h4 class="card-pet__title">Результаты анализов</h4>
+              <p class="card-pet__info">Пока нет готовых анализов</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="account-appointments">
+        <h2 class="account-appointments__title">Запись на прием</h2>
+        <div class="appointments-card">
+          <div class="appointments-card__left-column">
+            <img class="appointments-card__avatar" src="img/avatar-doc.jpg" alt="" width="130" height="130">
+            <button class="appointments-card__button-change
+            account__button-change">Отменить прием</button>
+          </div>
+          <div class="appointments-card__center-column">
+            <div class="appointments-card__information-wrapper appointments-card__doctor">
+              <h3 class="appointments-card__title">врач</h3>
+              <p class="appointments-card__info">Иванова<br>
+                Ирина Владимировна</p>
+            </div>
+            <div class="appointments-card__information-wrapper">
+              <h3 class="appointments-card__title">Ветклиника</h3>
+              <p class="appointments-card__info">Айболит на Краснополянской</p>
+            </div>
+          </div>
+          <div class="appointments-card__right-column">
+            <div class="appointments-card__information-wrapper">
+              <h3 class="appointments-card__title">Питомец</h3>
+              <p class="appointments-card__info">Громопетр</p>
+            </div>
+            <div class="appointments-card__information-wrapper">
+              <h3 class="appointments-card__title">Дата</h3>
+              <time class="appointments-card__info" datetime="2019-10-15">15.10.19</time>
+            </div>
+            <div class="appointments-card__information-wrapper">
+              <h3 class="appointments-card__title">Время</h3>
+              <time class="appointments-card__info">15:45</time>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="container footer__wrapper">
