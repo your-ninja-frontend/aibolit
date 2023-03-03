@@ -13,6 +13,8 @@
 @import "app-links";
 @import "change-city";
 @import "link-back";
+@import "pagination";
+@import "review";
 
 // Main Blocks on Page
 
@@ -24,6 +26,7 @@
 
 @import "services";
 @import "about-company";
+@import "about-company-slider";
 @import "achievements";
 @import "advantages";
 @import "app";
@@ -49,4 +52,24 @@
 @import "card-pet";
 @import "account-appointments";
 @import "appointments-card";
+
+// History page
+
+@import "history";
+@import "history-menu";
+@import "history-main-content";
+
+// Collective page
+
+@import "collective";
+@import "collective-menu";
+@import "collective-main-content";
+@import "experts";
+
+// Expert page
+
+@import "expert";
+@import "expert-profile";
+@import "expert-reviews";
+
 

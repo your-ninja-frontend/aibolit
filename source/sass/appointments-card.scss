@@ -21,28 +21,6 @@
 }
 
 .appointments-card__avatar {
-  position: relative;
-  display: block;
-  width: 130px;
-  height: 130px;
-  margin: 0 auto 10px;
-  border-radius: 50%;
-  object-fit: cover;
-  text-indent: -100vw;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $bg-price;
-    background-image: url("../img/avatar-preview.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   @media (min-width: $desktop) {
     margin-bottom: 30px;
   }

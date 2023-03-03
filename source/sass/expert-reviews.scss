@@ -1,0 +1,17 @@
+.expert-reviews__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expert-reviews__title {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.expert-reviews__count {
+  color: $brown-light;
+}
+
+.expert-reviews__pagination {
+  align-self: flex-end;
+}

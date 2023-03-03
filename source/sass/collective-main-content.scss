@@ -1,0 +1,23 @@
+.collective-main-content__img {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+
+.collective-main-content__blog {
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 100px;
+  }
+}
+
+.collective-main-content__title {
+  margin-bottom: 50px;
+  font-size: 30px;
+}

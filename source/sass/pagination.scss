@@ -1,0 +1,20 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination__item {
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.pagination__link {
+  color: $brown-light;
+}
+
+.pagination__link--active {
+  color: $black;
+}

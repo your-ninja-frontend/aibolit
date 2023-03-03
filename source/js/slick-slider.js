@@ -1,36 +1,27 @@
-if (document.querySelector('.slick')) {
+if (document.querySelector('.about-company-slider')) {
   $(document).ready(function () {
-    $('.slick').slick({
+    $('.about-company-slider').slick({
       slidesToShow: 6,
-      slidesToScroll: 1,
+      slidesToScroll: 6,
       variableWidth: true,
       responsive: [
         {
-          breakpoint: 1200,
+          breakpoint: 1600,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 1
+            slidesToScroll: 4
           }
         },
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
+            slidesToScroll: 3
           }
         },
         {
           breakpoint: 479,
           settings: {
-            arrows: false,
-            dots: true,
             slidesToShow: 1,
             slidesToScroll: 1
           }
@@ -113,3 +104,33 @@ if (document.querySelector('.all-services__slider')) {
     });
   });
 }
+
+if (document.querySelector('.expert-profile__slider')) {
+  $(document).ready(function () {
+    $('.expert-profile__slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      variableWidth: true,
+      responsive: [
+        {
+          breakpoint: 1919,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: false,
+            adaptiveHeight: true
+          }
+        }
+      ]
+    });
+  });
+};

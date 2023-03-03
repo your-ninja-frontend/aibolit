@@ -19,8 +19,8 @@
 
 <body class="page-body">
   <header class="header container">
-    <a href="index.html">
-      <img class="header__logo" src="img/logo.svg" alt="Логотип ветклиники Айболит" width="60" height="60">
+    <a class="header__logo" href="index.html">
+      <img class="header__logo-img" src="img/logo.svg" alt="Логотип ветклиники Айболит" width="60" height="60">
     </a>
     <nav class="menu">
       <button class="menu__button  menu__button--open" type="button">
@@ -39,12 +39,12 @@
               </a>
             </li>
             <li class="munu__submenu-item">
-              <a href="" class="menu__submenu-link">
+              <a href="collective.html" class="menu__submenu-link">
                 Коллектив
               </a>
             </li>
             <li class="munu__submenu-item">
-              <a href="" class="menu__submenu-link">
+              <a href="history.html" class="menu__submenu-link">
                 История компании
               </a>
             </li>
@@ -68,7 +68,7 @@
       Волгоград
     </button>
   </header>
-  <article class="slider slider--promo container">
+  <article class="slider slider__promo container">
     <div class="slider__button-list">
       <button class="slider__button slider__button--active">1</button>
       <button class="slider__button">2</button>
@@ -79,63 +79,46 @@
     </div>
     <div class="slider__main-content">
       <div class="slider__slide-list">
-        <div class="slider__slide slider__first-slide
-        slider__slide-1 slider__slide--active">
+        <div class="slider__slide slider__slide--active">
           <h2 class="slider__title">
-            Айболит<br> круглосуточная<br>
-            ветклиника
+            Айболит круглосуточная ветклиника
           </h2>
-          <img class="slider__img slider__first-slide-img" src="img/slider__first-slide.png"
+          <img class="slider__img" src="img/slider-slide1.jpg"
             alt="Изображение кота и собаки" width="833" height="786">
         </div>
-        <div class="slider__slide
-        slider__slide-2  slider__second-slide">
+        <div class="slider__slide">
           <h2 class="slider__title">
-            Комфортные<br>
-            оборудованные<br>
-            стационары
+            Комфортные оборудованные стационары
           </h2>
-          <img class="slider__img slider__second-slide-img" src="img/slider__second-slide.png"
+          <img class="slider__img" src="img/slider-slide2.jpg"
             alt="Изображение кота и собаки" width="807" height="274">
         </div>
-        <div class="slider__slide
-        slider__slide-3  slider__third-slide">
+        <div class="slider__slide">
           <h2 class="slider__title">
-            Новейшее<br>
-            европейское<br>
-            оборудование
+            Новейшее европейское оборудование
           </h2>
-          <img class="slider__img slider__third-slide-img" src="img/slider__third-slide.png"
+          <img class="slider__img" src="img/slider-slide3.jpg"
             alt="Изображение кота и собаки" width="599" height="820">
         </div>
-        <div class="slider__slide
-        slider__slide-4  slider__fourth-slide">
+        <div class="slider__slide">
           <h2 class="slider__title">
-            Собственная<br>
-            современная<br>
-            лаборатория
+            Собственная современная лаборатория
           </h2>
-          <img class="slider__img slider__fourth-slide-img" src="img/slider__fourth-slide.png"
+          <img class="slider__img" src="img/slider-slide4.jpg"
             alt="Изображение кота и собаки" width="830" height="726">
         </div>
-        <div class="slider__slide
-        slider__slide-5  slider__fifth-slide">
+        <div class="slider__slide">
           <h2 class="slider__title">
-            Аптека и зоомагазин<br>
-            по доступным<br>
-            ценам
+            Аптека и зоомагазин по доступным ценам
           </h2>
-          <img class="slider__img slider__fifth-slide-img" src="img/slider__fifth-slide.png"
+          <img class="slider__img" src="img/slider-slide5.jpg"
             alt="Изображение кота и собаки" width="678" height="975">
         </div>
-        <div class="slider__slide
-        slider__slide-6  slider__sixth-slide">
+        <div class="slider__slide">
           <h2 class="slider__title">
-            Груминг салон<br>
-            и косметические<br>
-            товары
+            Груминг салон и косметические товары
           </h2>
-          <img class="slider__img slider__sixth-slide-img" src="img/slider__sixth-slide.png"
+          <img class="slider__img" src="img/slider-slide6.jpg"
             alt="Изображение кота и собаки" width="926" height="617">
         </div>
       </div>
@@ -374,26 +357,18 @@
           about-company__history-link" href="#">Читать далее</a>
           <h2 class="about-company__title">Наши специалисты</h2>
           <div class="about-company-slider">
-            <div class="slick">
-              <div class="about-company-slider-img
-              about-company-slider-img1"></div>
-              <div class="about-company-slider-img
-              about-company-slider-img2"></div>
-              <div class="about-company-slider-img
-              about-company-slider-img3"></div>
-              <div class="about-company-slider-img
-              about-company-slider-img1"></div>
-              <div class="about-company-slider-img
-              about-company-slider-img2"></div>
-              <div class="about-company-slider-img
-              about-company-slider-img3"></div>
-              <div class="about-company-slider-img
-              about-company-slider-img1"></div>
-              <div class="about-company-slider-img
-              about-company-slider-img2"></div>
-              <div class="about-company-slider-img
-              about-company-slider-img3"></div>
-            </div>
+            <img class="about-company-slider__img avatar" src="img/about-company-slider-img-1.jpg" alt="">
+            <img class="about-company-slider__img avatar" src="img/about-company-slider-img-2.jpg" alt="">
+            <img class="about-company-slider__img avatar" src="img/about-company-slider-img-3.jpg" alt="">
+            <img class="about-company-slider__img avatar" src="img/about-company-slider-img-1.jpg" alt="">
+            <img class="about-company-slider__img avatar" src="img/about-company-slider-img-2.jpg" alt="">
+            <img class="about-company-slider__img avatar" src="img/about-company-slider-img-3.jpg" alt="">
+            <img class="about-company-slider__img avatar" src="img/about-company-slider-img-1.jpg" alt="">
+            <img class="about-company-slider__img avatar" src="img/about-company-slider-img-2.jpg" alt="">
+            <img class="about-company-slider__img avatar" src="img/about-company-slider-img-3.jpg" alt="">
+            <img class="about-company-slider__img avatar" src="img/about-company-slider-img-1.jpg" alt="">
+            <img class="about-company-slider__img avatar" src="img/about-company-slider-img-2.jpg" alt="">
+            <img class="about-company-slider__img avatar" src="img/about-company-slider-img-3.jpg" alt="">
           </div>
           <a class="about-company__link about-company__experts-link" href="#">Посмотреть всех</a>
         </div>

@@ -25,9 +25,17 @@
 }
 
 .header__logo {
+  display: block;
+  flex-shrink: 0;
+}
+
+.header__logo-img {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+
   @media (min-width: $desktop) {
     width: 79px;
-    height: 63px;
   }
 }
 
@@ -41,4 +49,8 @@
   @media (min-width: $desktop) {
     margin-bottom: 65px;
   }
+}
+
+.header__history {
+  margin-bottom: 75px;
 }

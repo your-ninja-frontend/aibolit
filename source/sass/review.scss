@@ -1,0 +1,62 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid $bg-price;
+  border-radius: 20px;
+  background-color: $white;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    padding: 30px;
+    gap: 30px;
+  }
+}
+
+.review__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.review__body {
+  margin-bottom: 30px;
+}
+
+.review__footer {
+  display: flex;
+  gap: 10px;
+
+  @media (min-width: $tablet) {
+    gap: 30px;
+  }
+}
+
+.review__reaction {
+  display: block;
+}
+
+.review__title {
+  margin-bottom: 10px;
+  font-family: $font-futura;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: lowercase;
+  color: $brown-light;
+}
+
+.review__user-name {
+  color: $black;
+  line-height: 25px;
+}
+
+.review__avatar-doc {
+  width: 75px;
+  height: 75px;
+}
+
+.review__answer-info {
+  line-height: 25px;
+}
