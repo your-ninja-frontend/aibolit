@@ -1,0 +1,27 @@
+.collective {
+  margin-bottom: 100px;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    gap: 39px;
+    margin-bottom: 100px;
+  }
+
+  @media (min-width: $full) {
+    gap: 115px;
+  }
+}
+
+.collective__left-column {
+  @media (max-width: $tablet-max) {
+    margin-bottom: 50px;
+  }
+}
+
+.collective__title {
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 100px;
+  }
+}

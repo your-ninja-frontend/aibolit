@@ -10,15 +10,13 @@
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" type="text/css" href="slick/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <body class="page-body">
   <header class="header header__account container">
-    <a href="index.html">
-      <img class="header__logo" src="img/logo.svg" alt="Логотип ветклиники Айболит" width="60" height="60">
+    <a class="header__logo" href="index.html">
+      <img class="header__logo-img" src="img/logo.svg" alt="Логотип ветклиники Айболит" width="60" height="60">
     </a>
     <nav class="menu">
       <button class="menu__button  menu__button--open" type="button">
@@ -32,7 +30,7 @@
           <a class="menu__link" href="#">О нас</a>
           <ul class="menu__submenu">
             <li class="munu__submenu-item">
-              <a href="" class="menu__submenu-link">
+              <a href="services.html" class="menu__submenu-link">
                 Услуги и цены
               </a>
             </li>
@@ -42,7 +40,7 @@
               </a>
             </li>
             <li class="munu__submenu-item">
-              <a href="" class="menu__submenu-link">
+              <a href="history.html" class="menu__submenu-link">
                 История компании
               </a>
             </li>
@@ -52,7 +50,7 @@
           <a class="menu__link" href="#">Новости и акции</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#contacts-all">Контакты</a>
+          <a class="menu__link" href="index.html#contacts-all">Контакты</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="#">Блог</a>
@@ -70,20 +68,22 @@
     <div class="account__left-column">
       <section class="account-menu">
         <h1 class="account-menu__title">Виктория</h1>
-        <ul class="account-menu__list">
-          <li class="account-menu__item">
-            <a class="account-menu__link" href="#">Личные данные</a>
-          </li>
-          <li class="account-menu__item">
-            <a class="account-menu__link" href="#">Мои питомцы</a>
-          </li>
-          <li class="account-menu__item">
-            <a class="account-menu__link" href="#">Запись на прием</a>
-          </li>
-          <li class="account-menu__item">
-            <a class="account-menu__link" href="#">Выйти</a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="account-menu__list">
+            <li class="account-menu__item">
+              <a class="account-menu__link" href="#">Личные данные</a>
+            </li>
+            <li class="account-menu__item">
+              <a class="account-menu__link" href="#">Мои питомцы</a>
+            </li>
+            <li class="account-menu__item">
+              <a class="account-menu__link" href="#">Запись на прием</a>
+            </li>
+            <li class="account-menu__item">
+              <a class="account-menu__link" href="#">Выйти</a>
+            </li>
+          </ul>
+        </nav>
       </section>
     </div>
     <div class="account__right-column">
@@ -91,7 +91,7 @@
         <h2 class="account-personal-data__title">Личные данные</h2>
         <div class="account-personal-data__wrapper">
           <div class="account-personal-data__left-column">
-            <img class="account-personal-data__avatar" src="#" alt="" width="130" height="130">
+            <img class="account-personal-data__avatar avatar" src="#" alt="" width="130" height="130">
             <button class="account-personal-data__button-change account__button-change">Изменить</button>
           </div>
           <div class="account-personal-data__center-column">
@@ -129,7 +129,7 @@
           Добавить нового питомца</button>
         <div class="card-pet">
           <div class="card-pet__left-column">
-            <img class="card-pet__avatar" src="img/pet-dog.jpg" alt="">
+            <img class="card-pet__avatar avatar" src="img/pet-dog.jpg" alt="">
             <button class="card-pet__button-change account__button-change">Изменить</button>
           </div>
           <div class="card-pet__center-column">
@@ -229,7 +229,7 @@
         </div>
         <div class="card-pet">
           <div class="card-pet__left-column">
-            <img class="card-pet__avatar" src="img/pet-cat.jpg" alt="">
+            <img class="card-pet__avatar avatar" src="img/pet-cat.jpg" alt="">
             <button class="card-pet__button-change account__button-change">Изменить</button>
           </div>
           <div class="card-pet__center-column">
@@ -270,7 +270,7 @@
         <h2 class="account-appointments__title">Запись на прием</h2>
         <div class="appointments-card">
           <div class="appointments-card__left-column">
-            <img class="appointments-card__avatar" src="img/avatar-doc.jpg" alt="" width="130" height="130">
+            <img class="appointments-card__avatar avatar" src="img/avatar-doc.jpg" alt="" width="130" height="130">
             <button class="appointments-card__button-change
             account__button-change">Отменить прием</button>
           </div>
@@ -328,12 +328,12 @@
             </a>
           </li>
           <li class="footer-navigation__item">
-            <a href="" class="footer-navigation__link">
+            <a href="services.html" class="footer-navigation__link">
               Услуги и цены
             </a>
           </li>
           <li class="footer-navigation__item">
-            <a href="" class="footer-navigation__link">
+            <a href="history.html" class="footer-navigation__link">
               История компании
             </a>
           </li>
@@ -446,9 +446,6 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
-  <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
-  <script src="slick/slick/slick.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 

@@ -17,8 +17,8 @@
 
 <body class="page-body">
   <header class="header header__therapy container">
-    <a href="index.html">
-      <img class="header__logo" src="img/logo.svg" alt="Логотип ветклиники Айболит" width="60" height="60">
+    <a class="header__logo" href="index.html">
+      <img class="header__logo-img" src="img/logo.svg" alt="Логотип ветклиники Айболит" width="60" height="60">
     </a>
     <nav class="menu">
       <button class="menu__button  menu__button--open" type="button">
@@ -42,7 +42,7 @@
               </a>
             </li>
             <li class="munu__submenu-item">
-              <a href="" class="menu__submenu-link">
+              <a href="history.html" class="menu__submenu-link">
                 История компании
               </a>
             </li>
@@ -52,7 +52,7 @@
           <a class="menu__link" href="#">Новости и акции</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link" href="#contacts-all">Контакты</a>
+          <a class="menu__link" href="index.html#contacts-all">Контакты</a>
         </li>
         <li class="menu__item">
           <a class="menu__link" href="#">Блог</a>
@@ -74,7 +74,7 @@
       Назад
     </a>
     <main class="therapy">
-      <div class="therapy__column-left">
+      <section class="therapy__column-left">
         <h1 class="therapy__title">Терапия</h1>
         <nav>
           <ul class="therapy__menu-list">
@@ -105,7 +105,7 @@
             </li>
           </ul>
         </nav>
-      </div>
+      </section>
       <div class="therapy__column-right">
         <section class="appointments appointments__therapy">
           <h2 class="appointments__therapy-title">
@@ -114,7 +114,7 @@
           <div class="appointments__therapy-slider slick__appointments">
             <a href="#" class="appointments__therapy-card">
               <div class="appointments__therapy-specialist-wrapper">
-                <img class="appointments__therapy-image" src="#" alt="" width="50" height="50">
+                <img class="appointments__therapy-image avatar avatar" src="#" alt="" width="50" height="50">
                 <h3 class="appointments__therapy-card-title">Ивантелеев Иван Константинович
                 </h3>
                 <span class="appointments__therapy-date">
@@ -125,7 +125,7 @@
             </a>
             <a href="#" class="appointments__therapy-card">
               <div class="appointments__therapy-specialist-wrapper">
-                <img class="appointments__therapy-image" src="#" alt="" width="50" height="50">
+                <img class="appointments__therapy-image avatar" src="#" alt="" width="50" height="50">
                 <h3 class="appointments__therapy-card-title">Ивантелеев Иван Константинович
                 </h3>
                 <span class="appointments__therapy-date">
@@ -136,7 +136,7 @@
             </a>
             <a href="#" class="appointments__therapy-card">
               <div class="appointments__therapy-specialist-wrapper">
-                <img class="appointments__therapy-image" src="#" alt="" width="50" height="50">
+                <img class="appointments__therapy-image avatar" src="#" alt="" width="50" height="50">
                 <h3 class="appointments__therapy-card-title">Ивантелеев Иван Константинович
                 </h3>
                 <span class="appointments__therapy-date">
@@ -147,7 +147,7 @@
             </a>
             <a href="#" class="appointments__therapy-card">
               <div class="appointments__therapy-specialist-wrapper">
-                <img class="appointments__therapy-image" src="#" alt="" width="50" height="50">
+                <img class="appointments__therapy-image avatar" src="#" alt="" width="50" height="50">
                 <h3 class="appointments__therapy-card-title">Ивантелеев Иван Константинович
                 </h3>
                 <span class="appointments__therapy-date">
@@ -158,7 +158,7 @@
             </a>
             <a href="#" class="appointments__therapy-card">
               <div class="appointments__therapy-specialist-wrapper">
-                <img class="appointments__therapy-image" src="#" alt="" width="50" height="50">
+                <img class="appointments__therapy-image avatar" src="#" alt="" width="50" height="50">
                 <h3 class="appointments__therapy-card-title">Ивантелеев Иван Константинович
                 </h3>
                 <span class="appointments__therapy-date">
@@ -169,7 +169,7 @@
             </a>
             <a href="#" class="appointments__therapy-card">
               <div class="appointments__therapy-specialist-wrapper">
-                <img class="appointments__therapy-image" src="#" alt="" width="50" height="50">
+                <img class="appointments__therapy-image avatar" src="#" alt="" width="50" height="50">
                 <h3 class="appointments__therapy-card-title">Ивантелеев Иван Константинович
                 </h3>
                 <span class="appointments__therapy-date">
@@ -180,7 +180,7 @@
             </a>
             <a href="#" class="appointments__therapy-card">
               <div class="appointments__therapy-specialist-wrapper">
-                <img class="appointments__therapy-image" src="#" alt="" width="50" height="50">
+                <img class="appointments__therapy-image avatar" src="#" alt="" width="50" height="50">
                 <h3 class="appointments__therapy-card-title">Ивантелеев Иван Константинович
                 </h3>
                 <span class="appointments__therapy-date">
@@ -296,18 +296,18 @@
           </h2>
           <div class="therapy-price-info-wrapper">
             <em class="therapy-price__accent-sentence ">Цены указаны без учета расходоных материалов</em>
-            <ul class="therapy-price__pagination-list">
-              <li class="therapy-price__pagination-item">
-                <a class="therapy-price__pagination-link therapy-price__pagination-link--active">1</a>
+            <ul class="pagination">
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--active">1</a>
               </li>
-              <li class="therapy-price__pagination-item">
-                <a class="therapy-price__pagination-link" href="">2</a>
+              <li class="pagination__item">
+                <a class="pagination__link" href="">2</a>
               </li>
-              <li class="therapy-price__pagination-item">
-                <a class="therapy-price__pagination-link" href="">3</a>
+              <li class="pagination__item">
+                <a class="pagination__link" href="">3</a>
               </li>
-              <li class="therapy-price__pagination-item">
-                <a class="therapy-price__pagination-link" href="">4</a>
+              <li class="pagination__item">
+                <a class="pagination__link" href="">4</a>
               </li>
             </ul>
           </div>
@@ -361,18 +361,18 @@
               <dd class="therapy-price__price">500 ₽</dd>
             </div>
           </dl>
-          <ul class="therapy-price__pagination-list">
-            <li class="therapy-price__pagination-item">
-              <a class="therapy-price__pagination-link therapy-price__pagination-link--active">1</a>
+          <ul class="pagination">
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--active">1</a>
             </li>
-            <li class="therapy-price__pagination-item">
-              <a class="therapy-price__pagination-link" href="">2</a>
+            <li class="pagination__item">
+              <a class="pagination__link" href="">2</a>
             </li>
-            <li class="therapy-price__pagination-item">
-              <a class="therapy-price__pagination-link" href="">3</a>
+            <li class="pagination__item">
+              <a class="pagination__link" href="">3</a>
             </li>
-            <li class="therapy-price__pagination-item">
-              <a class="therapy-price__pagination-link" href="">4</a>
+            <li class="pagination__item">
+              <a class="pagination__link" href="">4</a>
             </li>
           </ul>
         </section>

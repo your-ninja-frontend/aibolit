@@ -1,0 +1,27 @@
+.about-company-slider {
+  width: 178px;
+  max-width: 1155px;
+  margin-bottom: 60px;
+
+  @media (min-width: $tablet) {
+    width: 570px;
+  }
+  @media (min-width: $desktop) {
+    width: 760px;
+    margin-bottom: 36px;
+  }
+  @media (min-width: $full) {
+    width: 1155px;
+  }
+}
+
+.about-company-slider__img {
+  width: 178px;
+  height: 178px;
+  margin-right: 5px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet) {
+    margin-right: 15px;
+  }
+}

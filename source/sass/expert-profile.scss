@@ -1,0 +1,66 @@
+.expert-profile {
+  margin-bottom: 100px;
+}
+
+.expert-profile__title {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.expert-profile__info {
+  margin-bottom: 35px;
+}
+
+.expert-profile__experience {
+  text-transform: lowercase;
+  color: $brown-light;
+}
+
+.expert-profile__courses {
+  margin-bottom: 20px;
+  font-family: $font-futura;
+  font-size: 20px;
+  line-height: 30px;
+  color: $brown;
+}
+
+.expert-profile__slider {
+  width: 80vw;
+
+  @media (min-width: $desktop) {
+    width: 640px;
+  }
+
+  @media (min-width: $hd) {
+    width: 700px;
+  }
+
+  @media (min-width: $full) {
+    width: 843px;
+  }
+}
+
+.expert-profile__slide {
+  width: min-content;
+  margin: 0 8px;
+  padding: 16px;
+  border: 1px solid $bg-price;
+  border-radius: 20px;
+  background-color: $white;
+
+  @media (min-width: $tablet) {
+    width: max-content;
+  }
+}
+
+.expert-profile__course-date {
+  font-size: 15px;
+  line-height: 15px;
+  color: $brown-light;
+}
+
+.expert-profile__course-name {
+  font-family: $font-futura;
+  font-size: 20px;
+  line-height: 25px;
+}

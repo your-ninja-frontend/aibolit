@@ -1,0 +1,22 @@
+.history-menu__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
+}
+
+.history-menu__link {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $brown-light;
+
+  &:hover {
+    color: $brown;
+    padding-left: 10px;
+  }
+}

@@ -17,27 +17,6 @@
   }
 }
 
-.therapy-price__pagination-list {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.therapy-price__pagination-item {
-  margin-right: 16px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.therapy-price__pagination-link {
-  color: $brown-light;
-}
-
-.therapy-price__pagination-link--active {
-  color: $black;
-}
-
 .therapy-price__list {
   margin: 0;
 
