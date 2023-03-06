@@ -3,6 +3,10 @@
     order: -1;
   }
 
+  @media (min-width: $desktop) {
+    width: 70%;
+  }
+
   @media (min-width: $full-hd) {
     width: 100%;
     margin-left: 235px;
@@ -76,7 +80,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 10px;
+    padding: 0 10px;
   }
 
   @media (min-width: $full-hd) {
@@ -193,6 +197,11 @@
 
   &:hover {
     transition: padding 0.3s;
+    padding-left: 10px;
+    font-weight: 700;
+  }
+
+  &--active {
     padding-left: 10px;
     font-weight: 700;
   }

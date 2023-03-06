@@ -1,0 +1,87 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: rgba($bg-white, 0.96);
+  box-shadow: 0px 4px 10px rgba(8, 6, 6, 0.1);
+
+  @media (max-width: $tablet-max) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 33px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $desktop) {
+    min-height: 100px;
+  }
+
+  @media (min-width: $full-hd) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.header__logo {
+  display: block;
+  flex-shrink: 0;
+}
+
+.header__logo-img {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+
+  @media (min-width: $desktop) {
+    width: 79px;
+  }
+}
+
+.header__main {
+  @media (min-width: $desktop) {
+    margin-bottom: 97px;
+  }
+}
+
+.header__therapy,
+.header__history,
+.header__expert {
+  @media (min-width: $desktop) {
+    margin-bottom: 42px;
+  }
+}
+
+.header__account {
+  @media (min-width: $desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.header__collective {
+  @media (min-width: $desktop) {
+    margin-bottom: 123px;
+  }
+}
+
+.header__contacts {
+  @media (min-width: $desktop) {
+    margin-bottom: 100px;
+  }
+}
+
+.header__news {
+  @media (min-width: $desktop) {
+    margin-bottom: 57px;
+  }
+}

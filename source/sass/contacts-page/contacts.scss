@@ -1,11 +1,22 @@
 .contacts {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 100px;
 
-  @media (min-width: $full-hd) {
-    padding-top: 235px;
-    padding-bottom: 209px;
+  &__page {
+    margin-bottom: 100px;
+
+    @media (min-width: $full-hd) {
+      margin-bottom: 179px;
+    }
+  }
+
+  &__main {
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    @media (min-width: $full-hd) {
+      padding-top: 235px;
+      padding-bottom: 209px;
+    }
   }
 }
 
@@ -48,8 +59,7 @@
   max-height: 570px;
 
   @media (min-width: $tablet) {
-  min-width: 484px;
-  max-height: 526px;
+    min-width: 484px;
   }
 }
 

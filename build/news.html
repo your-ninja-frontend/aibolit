@@ -10,11 +10,15 @@
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
 </head>
 
 <body class="page-body">
-  <header class="header header__history">
+  <header class="header header__news">
     <div class="header__wrapper container">
       <a class="header__logo" href="index.html">
         <img class="header__logo-img" src="img/logo.svg" alt="Логотип ветклиники Айболит" width="60" height="60">
@@ -28,7 +32,7 @@
             <a class="menu__link" href="account.html">Личный кабинет</a>
           </li>
           <li class="menu__item menu__submenu-parent">
-            <a class="menu__link menu__link--active" href="#">О нас</a>
+            <a class="menu__link" href="#">О нас</a>
             <ul class="menu__submenu">
               <li class="munu__submenu-item">
                 <a href="services.html" class="menu__submenu-link">
@@ -41,14 +45,14 @@
                 </a>
               </li>
               <li class="munu__submenu-item">
-                <a class="menu__submenu-link menu__submenu-link--active">
+                <a href="history.html" class="menu__submenu-link">
                   История компании
                 </a>
               </li>
             </ul>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="news.html">Новости и акции</a>
+            <a class="menu__link menu__link--active">Новости и акции</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="contacts.html">Контакты</a>
@@ -66,99 +70,111 @@
       </button>
     </div>
   </header>
-  <div class="container history__wrapper">
-    <a class="link-back" href="#">
-      <svg class="link-back__arrow" width="20" height="24">
-        <use xlink:href="img/sprite/sprite.svg#link-back-arrow"></use>
-      </svg>
-      Назад
-    </a>
-    <main class="history">
-      <section class="history__left-column">
-        <h1 class="history__title">История компании</h1>
-        <nav class="history-menu">
-          <ul class="history-menu__list">
-            <li class="history-menu__item">
-              <a class="history-menu__link" href="">Поздаголовок 1</a>
-            </li>
-            <li class="history-menu__item">
-              <a class="history-menu__link" href="">Подзаголовок 2</a>
-            </li>
-            <li class="history-menu__item">
-              <a class="history-menu__link" href="">Подзаголовок 3</a>
-            </li>
-          </ul>
-        </nav>
-      </section>
-      <section class="history-main-content history__right-column">
-        <img class="history-main-content__img" src="img/history-main-img.jpg" alt="Кот под пледом">
-        <div class="history-main-content__blog">
-          <h2 class="history-main-content__title">Поздаголовок 1</h2>
-          <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-            facere modi, at atque velit
-            excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
-            atque vitae.</p>
-          <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-            facere modi, at atque velit
-            excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
-            atque vitae.</p>
-          <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-            facere modi, at atque velit
-            excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
-            atque vitae.</p>
-        </div>
-        <div class="history-main-content__blog">
-          <h2 class="history-main-content__title">Подзаголовок 2</h2>
-          <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-            facere modi, at atque velit
-            excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
-            atque vitae.</p>
-          <div class="history-main-content__wrapper-img">
-            <img class="history-main-content__blog-img" src="img/history-blog-2-img.jpg" alt="Кот">
-            <img class="history-main-content__blog-img" src="img/history-blog-2-img-2.jpg" alt="Мопс">
+  <div class="container">
+    <main class="news">
+      <div class="news__left-column">
+        <h1 class="news__title">Новости и акции</h1>
+      </div>
+      <div class="news__right-column">
+        <ul class="news__pagination pagination">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="">4</a>
+          </li>
+        </ul>
+        <a class="post" href="#">
+          <img class="post__img avatar" src="" alt="" width="255" height="255">
+          <div class="post__inner-wrapper">
+            <h2 class="post__title">Подарок</h2>
+            <span class="post__date">
+              до
+              <time datetime="2023-12-01">
+                1 декабря 2023
+              </time>
+            </span>
+            <p class="post__info">Данные клинического осмотра, указывающие на наличие наружного отита, включают такие
+              признаки, как отек и
+              эритема ушной раковины, выделения из ушей, болезненная реакция и/или беспокойство при пальпации наружного
+              слухового хода и потряхивание головой после т...</p>
           </div>
-          <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-            facere modi, at atque velit
-            excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
-            atque vitae.</p>
-          <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-            facere modi, at atque velit
-            excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
-            atque vitae.</p>
-          <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-            facere modi, at atque velit
-            excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
-            atque vitae.</p>
-          <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-            facere modi, at atque velit
-            excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
-            atque vitae.</p>
-        </div>
-        <div class="history-main-content__blog">
-          <h3 class="history-main-content__title">Подзаголовок 3</h3>
-          <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-            facere modi, at atque velit
-            excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
-            atque vitae.</p>
-          <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-            facere modi, at atque velit
-            excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
-            atque vitae.</p>
-          <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-            facere modi, at atque velit
-            excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
-            atque vitae.</p>
-          <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-            facere modi, at atque velit
-            excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
-            atque vitae.</p>
-        </div>
-      </section>
+        </a>
+        <a class="post" href="#">
+          <img class="post__img avatar" src="" alt="" width="255" height="255">
+          <div class="post__inner-wrapper">
+            <h2 class="post__title">Подарок</h2>
+            <span class="post__date">
+              до
+              <time datetime="2023-12-01">
+                1 декабря 2023
+              </time>
+            </span>
+            <p class="post__info">Данные клинического осмотра, указывающие на наличие наружного отита, включают такие
+              признаки, как отек и
+              эритема ушной раковины, выделения из ушей, болезненная реакция и/или беспокойство при пальпации наружного
+              слухового хода и потряхивание головой после т...</p>
+          </div>
+        </a>
+        <a class="post" href="#">
+          <img class="post__img post__img--no-active avatar" src="" alt="" width="255" height="255">
+          <div class="post__inner-wrapper">
+            <h2 class="post__title post__title--no-active">Подарок</h2>
+            <span>Акция закончилась</span>
+            <p class="post__info post__info--no-active">Данные клинического осмотра, указывающие на наличие наружного отита, включают такие
+              признаки, как отек и
+              эритема ушной раковины, выделения из ушей, болезненная реакция и/или беспокойство при пальпации наружного
+              слухового хода и потряхивание головой после т...</p>
+          </div>
+        </a>
+        <a class="post" href="#">
+          <img class="post__img post__img--no-active avatar" src="" alt="" width="255" height="255">
+          <div class="post__inner-wrapper">
+            <h2 class="post__title post__title--no-active">Подарок</h2>
+            <span>Акция закончилась</span>
+            <p class="post__info post__info--no-active">Данные клинического осмотра, указывающие на наличие наружного отита, включают такие
+              признаки, как отек и
+              эритема ушной раковины, выделения из ушей, болезненная реакция и/или беспокойство при пальпации наружного
+              слухового хода и потряхивание головой после т...</p>
+          </div>
+        </a>
+        <a class="post" href="#">
+          <img class="post__img post__img--no-active avatar" src="" alt="" width="255" height="255">
+          <div class="post__inner-wrapper">
+            <h2 class="post__title post__title--no-active">Подарок</h2>
+            <span>Акция закончилась</span>
+            <p class="post__info post__info--no-active">Данные клинического осмотра, указывающие на наличие наружного отита, включают такие
+              признаки, как отек и
+              эритема ушной раковины, выделения из ушей, болезненная реакция и/или беспокойство при пальпации наружного
+              слухового хода и потряхивание головой после т...</p>
+          </div>
+        </a>
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--active">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="">4</a>
+          </li>
+        </ul>
+      </div>
     </main>
   </div>
   <footer class="footer">
     <div class="container footer__wrapper">
-      <a class="footer__logo" href="#">
+      <a class="footer__logo" href="index.html">
         <svg class="footer__logo-image" width="90" height="90">
           <use xlink:href="img/sprite/sprite.svg#logo-footer"></use>
         </svg>
@@ -176,12 +192,12 @@
         </ul>
         <ul class="footer-navigation__list">
           <li class="footer-navigation__item">
-            <a href="index.html" class="footer-navigation__link">
+            <a class="footer-navigation__link">
               Главная
             </a>
           </li>
           <li class="footer-navigation__item">
-            <a href="" class="footer-navigation__link">
+            <a href="services.html" class="footer-navigation__link">
               Услуги и цены
             </a>
           </li>
@@ -299,6 +315,9 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+  <script src="slick/slick/slick.min.js"></script>
   <script src="js/script.min.js"></script>
 </body>
 

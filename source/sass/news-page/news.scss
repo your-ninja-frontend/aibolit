@@ -1,0 +1,26 @@
+.news {
+  max-width: 1460px;
+  margin: 0 auto 100px;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+}
+
+.news__title {
+  width: min-content;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 58px;
+  }
+}
+
+.news__pagination {
+  margin-bottom: 58px;
+}

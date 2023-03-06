@@ -1,6 +1,7 @@
 .expert-reviews__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .expert-reviews__title {
@@ -14,4 +15,8 @@
 
 .expert-reviews__pagination {
   align-self: flex-end;
+}
+
+.expert-reviews__pagination-bottom {
+  margin-top: 24px;
 }

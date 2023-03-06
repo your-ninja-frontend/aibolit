@@ -1,7 +1,9 @@
 .card-pet {
-
+  position: relative;
+  max-height: 900px;
   margin-bottom: 30px;
   padding: 10px;
+  padding-bottom: 30px;
   background-color: $white;
   border: 1px solid $bg-price;
   border-radius: 20px;
@@ -30,7 +32,7 @@
   flex-shrink: 0;
 }
 
-.card-pet__avatar {  
+.card-pet__avatar {
   @media (min-width: $desktop) {
     margin-bottom: 30px;
   }
@@ -82,8 +84,6 @@
 }
 
 .card-pet__right-column {
-  position: relative;
-
   @media (min-width: $desktop) {
     margin-top: 70px;
     flex-grow: 1;
@@ -167,7 +167,7 @@
 .card-pet__all-files {
   position: absolute;
   left: 50%;
-  bottom: -15px;
+  bottom: 10px;
   transform: translate(-50%);
   display: flex;
   align-items: center;

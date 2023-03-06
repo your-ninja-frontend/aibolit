@@ -13,6 +13,10 @@
 
 .pagination__link {
   color: $brown-light;
+
+  &:hover:not(.pagination__link--active) {
+    color: $brown;
+  }
 }
 
 .pagination__link--active {
