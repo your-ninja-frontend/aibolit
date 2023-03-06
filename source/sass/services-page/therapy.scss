@@ -13,10 +13,6 @@
   margin-bottom: 50px;
   overflow: hidden;
 
-  @media (max-width: $tablet-max) {
-    margin-top: 30px;
-  }
-
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 400px 1fr;

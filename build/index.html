@@ -18,55 +18,57 @@
 </head>
 
 <body class="page-body">
-  <header class="header container">
-    <a class="header__logo" href="index.html">
-      <img class="header__logo-img" src="img/logo.svg" alt="Логотип ветклиники Айболит" width="60" height="60">
-    </a>
-    <nav class="menu">
-      <button class="menu__button  menu__button--open" type="button">
-        <span class="visually-hidden">Открыть меню</span>
+  <header class="header header__main">
+    <div class="header__wrapper container">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-img" src="img/logo.svg" alt="Логотип ветклиники Айболит" width="60" height="60">
+      </a>
+      <nav class="menu">
+        <button class="menu__button  menu__button--open" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="menu__list menu__list--close">
+          <li class="menu__item">
+            <a class="menu__link" href="account.html">Личный кабинет</a>
+          </li>
+          <li class="menu__item menu__submenu-parent">
+            <a class="menu__link" href="#">О нас</a>
+            <ul class="menu__submenu">
+              <li class="munu__submenu-item">
+                <a href="services.html" class="menu__submenu-link">
+                  Услуги и цены
+                </a>
+              </li>
+              <li class="munu__submenu-item">
+                <a href="collective.html" class="menu__submenu-link">
+                  Коллектив
+                </a>
+              </li>
+              <li class="munu__submenu-item">
+                <a href="history.html" class="menu__submenu-link">
+                  История компании
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="news.html">Новости и акции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Блог</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="change-city">
+        <svg class="change-city__icon" width="20" height="30">
+          <use xlink:href="img/sprite/sprite.svg#change-city-icon"></use>
+        </svg>
+        Волгоград
       </button>
-      <ul class="menu__list menu__list--close">
-        <li class="menu__item">
-          <a class="menu__link" href="account.html">Личный кабинет</a>
-        </li>
-        <li class="menu__item menu__submenu-parent">
-          <a class="menu__link" href="#">О нас</a>
-          <ul class="menu__submenu">
-            <li class="munu__submenu-item">
-              <a href="services.html" class="menu__submenu-link">
-                Услуги и цены
-              </a>
-            </li>
-            <li class="munu__submenu-item">
-              <a href="collective.html" class="menu__submenu-link">
-                Коллектив
-              </a>
-            </li>
-            <li class="munu__submenu-item">
-              <a href="history.html" class="menu__submenu-link">
-                История компании
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Новости и акции</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#contacts-all">Контакты</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">Блог</a>
-        </li>
-      </ul>
-    </nav>
-    <button class="change-city">
-      <svg class="change-city__icon" width="20" height="30">
-        <use xlink:href="img/sprite/sprite.svg#change-city-icon"></use>
-      </svg>
-      Волгоград
-    </button>
+    </div>
   </header>
   <article class="slider slider__promo container">
     <div class="slider__button-list">
@@ -81,45 +83,39 @@
       <div class="slider__slide-list">
         <div class="slider__slide slider__slide--active">
           <h2 class="slider__title">
-            Айболит круглосуточная ветклиника
+            Айболит<br> круглосуточная<br> ветклиника
           </h2>
-          <img class="slider__img" src="img/slider-slide1.jpg"
-            alt="Изображение кота и собаки" width="833" height="786">
+          <img class="slider__img" src="img/slider-slide1.jpg" alt="Изображение кота и собаки" width="833" height="786">
         </div>
         <div class="slider__slide">
           <h2 class="slider__title">
-            Комфортные оборудованные стационары
+            Комфортные<br> оборудованные<br> стационары
           </h2>
-          <img class="slider__img" src="img/slider-slide2.jpg"
-            alt="Изображение кота и собаки" width="807" height="274">
+          <img class="slider__img" src="img/slider-slide2.jpg" alt="Изображение кота и собаки" width="807" height="274">
         </div>
         <div class="slider__slide">
           <h2 class="slider__title">
-            Новейшее европейское оборудование
+            Новейшее<br> европейское<br> оборудование
           </h2>
-          <img class="slider__img" src="img/slider-slide3.jpg"
-            alt="Изображение кота и собаки" width="599" height="820">
+          <img class="slider__img" src="img/slider-slide3.jpg" alt="Изображение кота и собаки" width="599" height="820">
         </div>
         <div class="slider__slide">
           <h2 class="slider__title">
-            Собственная современная лаборатория
+            Собственная<br> современная<br> лаборатория
           </h2>
-          <img class="slider__img" src="img/slider-slide4.jpg"
-            alt="Изображение кота и собаки" width="830" height="726">
+          <img class="slider__img" src="img/slider-slide4.jpg" alt="Изображение кота и собаки" width="830" height="726">
         </div>
         <div class="slider__slide">
           <h2 class="slider__title">
-            Аптека и зоомагазин по доступным ценам
+            Аптека и зоомагазин<br> по доступным<br> ценам
           </h2>
-          <img class="slider__img" src="img/slider-slide5.jpg"
-            alt="Изображение кота и собаки" width="678" height="975">
+          <img class="slider__img" src="img/slider-slide5.jpg" alt="Изображение кота и собаки" width="678" height="975">
         </div>
         <div class="slider__slide">
           <h2 class="slider__title">
-            Груминг салон и косметические товары
+            Груминг салон<br> и косметические<br> товары
           </h2>
-          <img class="slider__img" src="img/slider-slide6.jpg"
-            alt="Изображение кота и собаки" width="926" height="617">
+          <img class="slider__img" src="img/slider-slide6.jpg" alt="Изображение кота и собаки" width="926" height="617">
         </div>
       </div>
       <button class="slider__entry button">Записаться</button>
@@ -480,7 +476,7 @@
       <img class="app__img" src="img/app.png" alt="Изображение приложения">
     </div>
   </aside>
-  <section class="contacts container" id="contacts-all">
+  <section class="contacts contacts__main container">
     <h2 class="contacts__title">Контакты</h2>
     <div class="contacts__wrapper">
       <ul class="contacts__list">

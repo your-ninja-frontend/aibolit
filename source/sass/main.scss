@@ -1,75 +1,79 @@
 // GLOBAL
 
-@import "variables";
-@import "colors";
-@import "global";
-@import "button";
-@import "slick";
+@import "global/variables";
+@import "global/colors";
+@import "global/styles";
 
 // Components
 
-@import "slider";
-@import "social";
-@import "app-links";
-@import "change-city";
-@import "link-back";
-@import "pagination";
-@import "review";
+@import "components/slick";
+@import "components/slider";
+@import "components/social";
+@import "components/app-links";
+@import "components/change-city";
+@import "components/link-back";
+@import "components/pagination";
+@import "components/review";
+@import "components/post";
+@import "components/map";
+@import "components/button";
+@import "components/app";
 
-// Main Blocks on Page
+// Layers
 
-@import "header";
-@import "menu";
-@import "footer";
+@import "layers/header";
+@import "layers/menu";
+@import "layers/footer";
 
 // Main page
 
-@import "services";
-@import "about-company";
-@import "about-company-slider";
-@import "achievements";
-@import "advantages";
-@import "app";
-@import "contacts";
-@import "map";
-
+@import "main-page/services";
+@import "main-page/about-company";
+@import "main-page/about-company-slider";
+@import "main-page/achievements";
+@import "main-page/advantages";
 
 // Services page
 
-@import "therapy";
-@import "appointments";
-@import "therapy-main-content";
-@import "therapy-price";
-@import "all-services";
-
+@import "services-page/therapy";
+@import "services-page/appointments";
+@import "services-page/therapy-main-content";
+@import "services-page/therapy-price";
+@import "services-page/all-services";
 
 // Account page
 
-@import "account";
-@import "account-menu";
-@import "account-personal-data";
-@import "account-pets";
-@import "card-pet";
-@import "account-appointments";
-@import "appointments-card";
+@import "account-page/account";
+@import "account-page/account-menu";
+@import "account-page/account-personal-data";
+@import "account-page/account-pets";
+@import "account-page/card-pet";
+@import "account-page/account-appointments";
+@import "account-page/appointments-card";
 
 // History page
 
-@import "history";
-@import "history-menu";
-@import "history-main-content";
+@import "history-page/history";
+@import "history-page/history-menu";
+@import "history-page/history-main-content";
 
 // Collective page
 
-@import "collective";
-@import "collective-menu";
-@import "collective-main-content";
-@import "experts";
+@import "collective-page/collective";
+@import "collective-page/collective-menu";
+@import "collective-page/collective-main-content";
+@import "collective-page/experts";
 
 // Expert page
 
-@import "expert";
-@import "expert-profile";
-@import "expert-reviews";
+@import "expert-page/expert";
+@import "expert-page/expert-profile";
+@import "expert-page/expert-reviews";
 
+// Contacts
 
+@import "contacts-page/contacts";
+
+// News page
+
+@import "news-page/news";

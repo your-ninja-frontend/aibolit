@@ -122,7 +122,7 @@ const imageSqueeze = () => {
 // Отслеживание изменений стилей
 
 const watchAll = () => {
-  gulp.watch(['source/sass/*.scss'], stylesRun)
+  gulp.watch(['source/sass/**/*.scss'], stylesRun)
   gulp.watch(paths.scripts.src, scriptsRun),
     gulp.watch(paths.imageSvg.src, sprite),
     gulp.watch(paths.image.src, image)

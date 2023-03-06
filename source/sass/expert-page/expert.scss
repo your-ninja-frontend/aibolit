@@ -1,4 +1,6 @@
 .expert__wrapper {
+  margin-bottom: 100px;
+  
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 333px 1fr;
