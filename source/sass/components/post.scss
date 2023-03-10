@@ -23,7 +23,9 @@
   height: 255px;
   margin: 0;
   border-radius: 20px;
+}
 
+.post__img--news {
   &::after {
     background-image: url("../img/post-bg-img.jpg");
   }
