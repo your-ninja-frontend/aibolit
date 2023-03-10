@@ -140,6 +140,10 @@ button {
   background: transparent;
 }
 
+.blur>*:not(header) {
+  filter: blur(5px);
+}
+
 .page {
   height: 100%;
 }
@@ -160,6 +164,46 @@ button {
 
   @media (max-width: $tablet-max) {
     padding-top: 80px;
+  }
+}
+
+.page-flex {
+  max-width: 1460px;
+  margin: 0 auto 100px;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+  }
+}
+
+.page-menu {
+  @media (max-width: $tablet-max) {
+    margin-bottom: 50px;
+  }
+}
+
+.page-menu-item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 30px;
+  }
+}
+
+.page-menu-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $brown-light;
+
+  &:hover {
+    color: $brown;
+    padding-left: 10px;
   }
 }
 

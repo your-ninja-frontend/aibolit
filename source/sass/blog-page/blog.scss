@@ -1,0 +1,12 @@
+.blog__left-column {
+  min-width: 200px;
+}
+
+.blog__title {
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 100px;
+    padding-top: 58px;
+  }
+}

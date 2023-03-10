@@ -22,18 +22,11 @@
   padding: 0;
   cursor: pointer;
 
-  @media (min-width: $desktop) {
-    display: none;
-  }
-}
-
-.menu__button--open,
-.menu__button--close {
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 27px;
+    top: 20px;
     left: 22px;
     width: 36px;
     height: 3px;
@@ -44,12 +37,16 @@
       left: 42px;
     }
   }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
-.menu__button--close {
+.menu__button--active {
   &::before,
   &::after {
-    top: 40px;
+    top: 30px;
     box-shadow: none;
   }
 
@@ -88,7 +85,7 @@
   }
 }
 
-.menu__list--open {
+.menu__list--active {
   @media (max-width: $tablet-max) {
     display: block;
   }
