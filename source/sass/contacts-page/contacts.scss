@@ -108,18 +108,18 @@
 
 .contacts__icon--adress {
   &::before {
-    background-image: url("/build/img/place.svg");
+    background-image: url("../img/place.svg");
   }
 }
 
 .contacts__icon--tel {
   &::before {
-    background-image: url("/build/img/tel.svg");
+    background-image: url("../img/tel.svg");
   }
 }
 
 .contacts__icon--work-time {
   &::before {
-    background-image: url("/build/img/work-time.svg");
+    background-image: url("../img/work-time.svg");
   }
 }

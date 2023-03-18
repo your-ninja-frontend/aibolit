@@ -140,8 +140,10 @@ button {
   background: transparent;
 }
 
-.blur>*:not(header) {
-  filter: blur(5px);
+.blur > *:not(.header) {
+  @media (max-width: $tablet-max) {
+    filter: blur(5px);
+  }
 }
 
 .page {

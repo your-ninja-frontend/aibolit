@@ -11,6 +11,11 @@
     box-shadow: none;
   }
 
+  &:disabled {
+    background-color: $bg-price;
+    box-shadow: none;
+  }
+
   @media (max-width: $mobail-only) {
     font-size: 15px;
     padding: 15px 50px;
