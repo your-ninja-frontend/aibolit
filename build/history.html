@@ -93,7 +93,10 @@
         </nav>
       </section>
       <section class="history-main-content history__right-column">
-        <img class="history-main-content__img" src="img/history-main-img.jpg" alt="Кот под пледом">
+        <picture>
+          <source type="image/webp" srcset="img/history-main-img.webp 1x, img/history-main-img@2x.webp 2x">
+          <img class="history-main-content__img" src="img/history-main-img.jpg" srcset="img/history-main-img@2x.jpg" alt="Кот под пледом">
+        </picture>
         <div class="history-main-content__blog">
           <h2 class="history-main-content__title">Поздаголовок 1</h2>
           <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
@@ -116,8 +119,14 @@
             excepturi? Laudantium reprehenderit assumenda molestiae rerum eaque nobis natus neque placeat! Eum cum autem
             atque vitae.</p>
           <div class="history-main-content__wrapper-img">
-            <img class="history-main-content__blog-img" src="img/history-blog-2-img.jpg" alt="Кот">
-            <img class="history-main-content__blog-img" src="img/history-blog-2-img-2.jpg" alt="Мопс">
+            <picture>
+              <source type="image/webp" srcset="img/history-blog-2-img.webp 1x, img/history-blog-2-img@2x.webp 2x">
+              <img class="history-main-content__blog-img" src="img/history-blog-2-img.jpg" alt="Кот">
+            </picture>
+            <picture>
+              <source type="image/webp" srcset="img/history-blog-2-img-2.webp 1x, img/history-blog-2-img-2@2x.webp 2x">
+              <img class="history-main-content__blog-img" src="img/history-blog-2-img-2.jpg" srcset="img/history-blog-2-img-2@2x.jpg" alt="Мопс">
+            </picture>
           </div>
           <p class="history-main-content__info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
             facere modi, at atque velit

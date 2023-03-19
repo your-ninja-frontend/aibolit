@@ -12,28 +12,26 @@
   position: relative;
   max-width: 716px;
   margin: 0 auto;
+}
 
-  &--bg-bird::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 80px;
-    right: 0;
-    width: 288px;
-    height: 223px;
-    background-image: url('../img/achievements__bird-bg.png');
+.achievements__bird-img {
+  position: absolute;
+  z-index: -1;
+  top: 80px;
+  right: 0;
+  width: 288px;
+  height: 223px;
 
-    @media (min-width: $tablet) {
-      top: 150px;
-      right: 120px;
-    }
-    @media (min-width: $desktop) {
-      z-index: 0;
-      top: 270px;
-      right: 50px;
-    }
+  @media (min-width: $tablet) {
+    top: 150px;
+    right: 120px;
+  }
+  @media (min-width: $desktop) {
+    top: 270px;
+    right: 50px;
   }
 }
+
 .achievements__title {
   font-size: 50px;
   line-height: 40px;

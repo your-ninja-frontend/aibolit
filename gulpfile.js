@@ -2,7 +2,7 @@ import gulp from 'gulp';
 import imagemin from 'gulp-imagemin';
 import sass from 'sass';
 import gulpSass from 'gulp-sass';
-import cleanCss from 'gulp-clean-css';
+import cleanCss from 'gulp-csso';
 import rename from 'gulp-rename';
 import { deleteAsync } from 'del';
 import sourcemaps from 'gulp-sourcemaps';
@@ -13,6 +13,7 @@ import svgmin from 'gulp-svgmin';
 import svgSprite from 'gulp-svg-sprite';
 import replace from 'gulp-replace';
 import cheerio from 'gulp-cheerio';
+import webp from 'gulp-webp';
 
 const createSass = gulpSass(sass);
 
@@ -119,18 +120,28 @@ const imageSqueeze = () => {
     .pipe(gulp.dest(paths.image.dest))
 }
 
+// Convert webp
+
+const convertWebp = () => {
+  return gulp.src(paths.image.src)
+    .pipe(imagemin())
+    .pipe(webp())
+    .pipe(gulp.dest(paths.image.dest))
+};
+
 // Отслеживание изменений стилей
 
 const watchAll = () => {
-  gulp.watch(['source/sass/**/*.scss'], stylesRun)
-  gulp.watch(paths.scripts.src, scriptsRun),
+  gulp.watch(['source/sass/**/*.scss'], stylesRun),
+    gulp.watch(paths.scripts.src, scriptsRun),
     gulp.watch(paths.imageSvg.src, sprite),
-    gulp.watch(paths.image.src, image)
+    gulp.watch(paths.image.src, image),
+    gulp.watch(paths.image.src, imageWebp)
 }
 
 // Сборка файла стилей
 
-const build = gulp.series(clean, gulp.parallel(styles, scripts, imageSqueeze, svgsprite), watchAll)
+const build = gulp.series(clean, gulp.parallel(styles, scripts, imageSqueeze, svgsprite, convertWebp), watchAll)
 
 export const stylesRun = styles;
 export const delAll = clean;
@@ -138,4 +149,5 @@ export const watch = watchAll;
 export const scriptsRun = scripts;
 export const sprite = svgsprite;
 export const image = imageSqueeze;
+export const imageWebp = convertWebp;
 export const b = build;
