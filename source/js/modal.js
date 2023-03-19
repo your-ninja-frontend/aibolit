@@ -7,6 +7,7 @@ const reviewSuccess = document.querySelector('.modal__review-successful');
 
 
 const showModal = (modal) => {
+  console.log(modal);
   const wrapper = modal.querySelector('.modal__wrapper');
   const onPopupEscKeydown = e => escKeydown(e, closeModal);
   const onClickPage = e => {
