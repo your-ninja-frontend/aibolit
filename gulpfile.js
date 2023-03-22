@@ -24,25 +24,25 @@ const createSass = gulpSass(sass);
 const paths = {
   styles: {
     src: 'source/sass/main.scss',
-    dest: 'build/css/'
+    dest: 'css/'
   },
   scripts: {
     src: 'source/js/**/*.js',
-    dest: 'build/js/'
+    dest: 'js/'
   },
   imageSvg: {
     src: 'source/img/sprite/*.svg',
-    dest: 'build/img/sprite/'
+    dest: 'img/sprite/'
   },
   image: {
     src: 'source/img/*',
-    dest: 'build/img/'
+    dest: 'img/'
   }
 }
 
 // Отчистка кталога стилей
 
-const clean = () => deleteAsync(['build/css/*.css', 'build/js/*.js', paths.imageSvg.dest, paths.image.dest]);
+const clean = () => deleteAsync(['css/*.css', 'js/*.js', paths.imageSvg.dest, paths.image.dest]);
 
 // Генерация файла стилей
 
