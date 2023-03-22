@@ -1,4 +1,6 @@
 import gulp from 'gulp';
+import autoprefixer from 'autoprefixer';
+import postcss from 'gulp-postcss';
 import imagemin from 'gulp-imagemin';
 import sass from 'sass';
 import gulpSass from 'gulp-sass';
@@ -48,6 +50,7 @@ const styles = () => {
   return gulp.src(paths.styles.src)
     .pipe(sourcemaps.init())
     .pipe(createSass())
+    .pipe(postcss([ autoprefixer() ]))
     .pipe(cleanCss())
     .pipe(rename({
       basename: 'style',
